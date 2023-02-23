@@ -1,24 +1,28 @@
-import React from 'react'
+import React from "react";
 // BG COLOR: use useEffect here to look for changes to a specific thing: changing color codes
-import { HexColorPicker, HexColorInput } from 'react-colorful'
+import { HexColorPicker, HexColorInput } from "react-colorful";
 
-function ColorPicker (props) {
-  // Use a react hook instead of Redux?
+function ColorPicker(props) {
+  // const [color, setColor] = useState("#81D274");
   // useEffect(() => {
 
   // }
 
   return (
     <div>
-      <section className='color-picker-layout'>
-        <HexColorPicker color={props.color} onChange={props.setColor} />
-        <HexColorInput type='text' color={props.color} onChange={props.setColor} />
+      <section className="color-picker-layout">
+        <HexColorPicker color={props.color} onChange={props.onChange} />
+        <HexColorInput
+          type="text"
+          color={props.color}
+          onChange={props.onChange}
+        />
       </section>
     </div>
-  )
+  );
 }
 
-export default ColorPicker
+export default ColorPicker;
 
 // When a user changes the hex value in the color picker, the background color changes to the same
 

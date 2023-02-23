@@ -2,7 +2,7 @@
 html,
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #fff;
+  /* background-color: #fff; */
   color: #222;
 }
 
@@ -15,7 +15,12 @@ body {
   font: inherit;
 }
 
+.container {
+  background-color: #81d274;
+}
+
 .layout-top {
+  background-color: cornflowerblue;
   display: flex;
   align-items: flex-end;
   width: 100%;
