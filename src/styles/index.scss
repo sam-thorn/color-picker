@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+// Page Layout
+.layout-top {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 50vh;
+  padding: 120px 32px 0px 32px;
+  transition: color 0.15s;
+}
+
+.layout-bottom {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 50vh;
+  padding: 32px 32px 120px 32px;
+  transition: color 0.15s;
+}
+
+// Color Picker
+.color-picker-layout .react-colorful {
+  padding: 16px;
+  border-radius: 12px;
+  background: rgb(248, 248, 248);
+  box-shadow: 0 1px 3px rgb(175, 175, 175);
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 200px;
+  margin: 20px 0 0 0;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #eee;
+  outline: none;
+  font: inherit;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+input:hover {
+  background: rgb(248, 248, 248);
+}
+
+input:focus {
+  border-color: rgb(179, 179, 179);
+}
+
+// Logo and Copy
+.logo-block {
+  padding-left: 32px;
+}
+
+#logo-block-copy {
+  padding-top: 26px;
+}
+
+// Color Codes Table
+.ctable {
+  display: flex;
+  width: 410px;
+  background-color: rgb(248, 248, 248);
+  padding: 16px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.ctable-body {
+  display: flex;
+  flex-direction: column;
+  background-color: lightcoral;
+}
+
+.ctable-row {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(248, 248, 248);
+  border-bottom: lightslategrey 1px solid;
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
+.ctable-code-type {
+  padding-left: 16px;
+}
+
+.ctable-code-value {
+  padding-left: 252px;
+  padding-right: 16px;
+}
+
+.clipboard-button-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(248, 248, 248);
+  padding: 18px 16px 16px 0;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.MuiButton-root {
+  text-transform: lowercase;
+}
+
+// Footer
+.repo-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.repo-image {
+  height: 30px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}

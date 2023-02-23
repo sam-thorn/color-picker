@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap);
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+.layout-top {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 50vh;
+  padding: 120px 32px 0px 32px;
+  transition: color 0.15s;
+}
+
+.layout-bottom {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 50vh;
+  padding: 32px 32px 120px 32px;
+  transition: color 0.15s;
+}
+
+.color-picker-layout .react-colorful {
+  padding: 16px;
+  border-radius: 12px;
+  background: #f8f8f8;
+  box-shadow: 0 1px 3px #afafaf;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 200px;
+  margin: 20px 0 0 0;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #eee;
+  outline: none;
+  font: inherit;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+input:hover {
+  background: #f8f8f8;
+}
+
+input:focus {
+  border-color: #b3b3b3;
+}
+
+.logo-block {
+  padding-left: 32px;
+}
+
+#logo-block-copy {
+  padding-top: 26px;
+}
+
+.ctable {
+  display: flex;
+  width: 410px;
+  background-color: #f8f8f8;
+  padding: 16px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.ctable-body {
+  display: flex;
+  flex-direction: column;
+  background-color: lightcoral;
+}
+
+.ctable-row {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+  border-bottom: lightslategrey 1px solid;
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
+.ctable-code-type {
+  padding-left: 16px;
+}
+
+.ctable-code-value {
+  padding-left: 252px;
+  padding-right: 16px;
+}
+
+.clipboard-button-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 18px 16px 16px 0;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.MuiButton-root {
+  text-transform: lowercase;
+}
+
+.repo-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.repo-image {
+  height: 30px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=styles.css.map*/
