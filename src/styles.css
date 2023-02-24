@@ -2,7 +2,6 @@
 html,
 body {
   font-family: "Montserrat", sans-serif;
-  /* background-color: #fff; */
   color: #222;
 }
 
@@ -16,34 +15,29 @@ body {
 }
 
 .container {
-  background-color: #81d274;
+  background-color: #efa042;
+  height: 100%;
+  margin: 0;
 }
 
-.layout-top {
-  background-color: cornflowerblue;
+.cp-layout {
   display: flex;
-  align-items: flex-end;
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
-  min-height: 50vh;
-  padding: 120px 32px 0px 32px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 32px;
   transition: color 0.15s;
 }
 
-.layout-bottom {
+.cp-card {
   display: flex;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
-  min-height: 50vh;
-  padding: 32px 32px 120px 32px;
-  transition: color 0.15s;
+  justify-content: center;
 }
 
 .color-picker-layout .react-colorful {
   padding: 16px;
+  width: 300px;
+  height: 256px;
   border-radius: 12px;
   background: #f8f8f8;
   box-shadow: 0 1px 3px #afafaf;
@@ -52,7 +46,7 @@ body {
 input {
   display: block;
   box-sizing: border-box;
-  width: 200px;
+  width: 300px;
   margin: 20px 0 0 0;
   padding: 6px;
   border: 1px solid #ddd;
@@ -60,6 +54,8 @@ input {
   background: #eee;
   outline: none;
   font: inherit;
+  font-size: 32px;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
 }
@@ -74,9 +70,16 @@ input:focus {
 
 .logo-block {
   padding-left: 32px;
+  min-width: 400px;
+}
+
+.logo {
+  min-width: 400px;
 }
 
 #logo-block-copy {
+  font-size: 24px;
+  font-weight: 600;
   padding-top: 26px;
 }
 
@@ -132,7 +135,7 @@ input:focus {
 
 .repo-image {
   height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   opacity: 0.6;
 }
 
