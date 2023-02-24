@@ -51,7 +51,7 @@ input {
   padding: 6px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  background: #eee;
+  background: #f8f8f8;
   outline: none;
   font: inherit;
   font-size: 32px;
@@ -61,7 +61,7 @@ input {
 }
 
 input:hover {
-  background: #f8f8f8;
+  background: #eee;
 }
 
 input:focus {
