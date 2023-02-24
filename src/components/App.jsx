@@ -5,16 +5,17 @@ import ColorPicker from "./ColorPicker";
 import Footer from "./Footer";
 
 function App() {
-  const [color, setColor] = useState("#81D274");
+  const [color, setColor] = useState("#EFA042");
 
   return (
     <>
       <div className="container" style={{ backgroundColor: color }}>
-        <div className="layout-top">
-          <ColorPicker color={color} onChange={setColor} />
-          <Logo />
+        <div className="cp-layout">
+          <div className="cp-card">
+            <ColorPicker color={color} onChange={setColor} />
+            <Logo />
+          </div>
         </div>
-        <div className="layout-bottom">{/* <ColorCodes /> */}</div>
         <Footer />
       </div>
     </>
