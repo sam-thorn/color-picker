@@ -5,7 +5,7 @@ import repoLink from "./github.svg";
 function Footer() {
   return (
     <footer className="repo-link-container">
-      <a className="repo-link" href="https://github.com/sam-thorn/Gimme-Gimme">
+      <a className="repo-link" href="https://github.com/sam-thorn/color-picker">
         <img className="repo-image" src={repoLink} alt="link to repo" />
       </a>
     </footer>
