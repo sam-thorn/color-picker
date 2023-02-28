@@ -1,5 +1,4 @@
 import React from "react";
-
 import repoLink from "./github.svg";
 
 function Footer() {
