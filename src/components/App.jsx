@@ -5,7 +5,7 @@ import ColorPicker from "./ColorPicker";
 import Footer from "./Footer";
 
 function App() {
-  const [color, setColor] = useState("#EFA042");
+  const [color, setColor] = useState("#FFB760");
 
   return (
     <>
