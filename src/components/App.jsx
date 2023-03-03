@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import Logo from "./Logo";
 import ColorPicker from "./ColorPicker";
 import Footer from "./Footer";
