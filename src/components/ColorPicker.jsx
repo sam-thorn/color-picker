@@ -5,6 +5,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 function ColorPicker(props) {
+  // eslint-disable-next-line
   const [isCopied, setIsCopied] = useState(false);
 
   const handleClick = () => {
