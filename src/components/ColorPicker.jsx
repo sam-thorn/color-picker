@@ -1,4 +1,10 @@
-import { TextField, IconButton, InputAdornment } from "@mui/material";
+import {
+  TextField,
+  IconButton,
+  InputAdornment,
+  Tooltip,
+  Fade,
+} from "@mui/material";
 import React, { useState } from "react";
 import { HexColorPicker } from "react-colorful";
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -15,28 +21,30 @@ function ColorPicker(props) {
     }, 1000);
   };
 
+  // write function here to handle tooltip logic
+
   return (
     <>
-      <section className="color-picker-layout">
+      <section className="color-picker-container">
         <HexColorPicker color={props.color} onChange={props.onChange} />
         <TextField
           className="text-field"
-          value={props.color.toUpperCase()}
+          value={props.color}
           variant="outlined"
           InputProps={{
             endAdornment: (
               <InputAdornment position="end">
-                <CopyToClipboard
-                  text={props.color.toUpperCase()}
-                  onClick={handleClick}
-                >
-                  <IconButton
-                    className="copy-button"
-                    variant="contained"
-                    // disableRipple
+                <CopyToClipboard text={props.color} onClick={handleClick}>
+                  <Tooltip
+                    className="tooltip"
+                    title={isCopied ? "Copied!" : "Copy to clipboard"}
+                    TransitionComponent={Fade}
+                    TransitionProps={{ timeout: 800 }}
                   >
-                    <ContentCopyIcon />
-                  </IconButton>
+                    <IconButton className="copy-button" variant="contained">
+                      <ContentCopyIcon />
+                    </IconButton>
+                  </Tooltip>
                 </CopyToClipboard>
               </InputAdornment>
             ),

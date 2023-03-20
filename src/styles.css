@@ -34,7 +34,7 @@ body {
   justify-content: center;
 }
 
-.color-picker-layout .react-colorful {
+.color-picker-container .react-colorful {
   padding: 16px;
   margin-bottom: 20px;
   width: 300px;
@@ -53,19 +53,31 @@ body {
   border-radius: 4px;
   background: #f8f8f8;
   outline: none;
-  font: inherit;
-  font-size: 32px;
-  font-weight: 600;
+}
+
+.text-field input {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 400;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .text-field:hover {
-  background: #eee;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
 }
 
 .text-field:focus {
   border-color: #b3b3b3;
+  border: 1px solid #ddd;
+}
+
+.copy-button:hover {
+  cursor: grab;
+}
+
+.copy-button:active {
+  cursor: grabbing;
 }
 
 .logo-block {
